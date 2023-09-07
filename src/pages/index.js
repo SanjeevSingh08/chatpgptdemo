@@ -57,7 +57,7 @@ export default function Home() {
     <div className="main-container container mx-auto max-w-[700px]">
       <div className="flex flex-col h-screen bg-gray-900">
         <div className="p-6">
-          <h1 className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-left font-bold text-4xl md:text-6xl">56765 MTN</h1>
+          // <h1 className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-left font-bold text-4xl md:text-6xl">56765 MTN</h1>
           <h4 className="text-white text-center py-3 text-sm md:text-base">Hi, Welcome to the SMS CHATGPT Service, you can ask questions, and AI will help you</h4>
         </div>
         <div className="flex-grow p-6 chat-section" style={{ overflowY: 'auto' }} ref={chatContainerRef}>
