@@ -53,7 +53,7 @@ export default function Home() {
     })
   }
 
-  const isSmallScreen = window.innerWidth < 500; // Check if the screen width is less than 500px
+  const isSmallScreen = window.innerWidth<500; // Check if the screen width is less than 500px
 
   return (
     <div className="main-container container mx-auto max-w-[700px]">
