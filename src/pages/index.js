@@ -78,7 +78,8 @@ export default function Home() {
             )}
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="flex-none p-6 type-section">
+        <form onSubmit={handleSubmit} className="flex-none p-6 type-section"
+  style={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}>
           <div className="flex rounded-lg border border-gray-700 bg-gray-800">
             <input
               type="text"
