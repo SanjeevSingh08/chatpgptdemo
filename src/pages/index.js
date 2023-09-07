@@ -55,12 +55,9 @@ export default function Home() {
 
   return (
     <div className="main-container container mx-auto max-w-[700px]">
-      <div className="flex flex-col min-h-screen bg-gray-900">
-        {/* Fixed navbar at the top */}
-        <nav className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-left font-bold text-2xl md:text-4xl p-6">
-          56765 MTN
-        </nav>
+      <div className="flex flex-col h-screen bg-gray-900">
         <div className="p-6">
+          <h1 className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-left font-bold text-4xl md:text-6xl">56765 MTN</h1>
           <h4 className="text-white text-center py-3 text-sm md:text-base">Hi, Welcome to the SMS CHATGPT Service, you can ask questions, and AI will help you</h4>
         </div>
         <div className="flex-grow p-6 chat-section" style={{ overflowY: 'auto' }} ref={chatContainerRef}>
@@ -81,23 +78,21 @@ export default function Home() {
             )}
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="flex-none p-6 type-section bg-gray-800">
-          <div className="container mx-auto max-w-[700px]">
-            <div className="flex rounded-lg border border-gray-700">
-              <input
-                type="text"
-                className="flex-grow px-4 py-2 bg-transparent text-white focus:outline-none text-sm md:text-base"
-                placeholder="Type your message..."
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-              />
-              <button
-                type="submit"
-                className="bg-purple-500 rounded-lg px-4 py-2 text-white font-semibold focus:outline-none hover:bg-purple-600 transition-colors duration-300"
-              >
-                Send
-              </button>
-            </div>
+        <form onSubmit={handleSubmit} className="flex-none p-6 type-section">
+          <div className="flex rounded-lg border border-gray-700 bg-gray-800">
+            <input
+              type="text"
+              className="flex-grow px-4 py-2 bg-transparent text-white focus:outline-none text-sm md:text-base"
+              placeholder="Type your message..."
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+            />
+            <button
+              type="submit"
+              className="bg-purple-500 rounded-lg px-4 py-2 text-white font-semibold focus:outline-none hover:bg-purple-600 transition-colors duration-300"
+            >
+              Send
+            </button>
           </div>
         </form>
       </div>
