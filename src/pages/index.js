@@ -28,7 +28,7 @@ export default function Home() {
 
     setChatLog((prevChatLog) => [...prevChatLog, { type: 'user', message: inputValue }]);
 const prompt =
-    "Please answer in 8 year old kid understandable language and within 140 words and  not more than 140 words, it could be 80 words or 50 words but not more than 140 words: \n here is the question" +
+    "Please answer in 8 year old kid understandable language and within 140 characters and  not more than 140 characters, it could be 80 character or 50 characters but not more than 140 characters: \n give answer to the below question or answer what is asked" +
     inputValue;
     sendMessage(prompt);
 
