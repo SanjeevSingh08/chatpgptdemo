@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Add the following CSS styles to your existing styles or CSS file */
+
+/* Style the chat-section container */
+.chat-section {
+    max-height: calc(100% - 120px);
+    overflow-y: auto;
+    /* Customize the scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(100, 100, 100, 0.5) rgba(60, 0, 150, 0.8);
+  }
+  
+  /* Customize the scrollbar track (background) */
+  .chat-section::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  /* Customize the scrollbar thumb (the draggable part) */
+  .chat-section::-webkit-scrollbar-thumb {
+    background-color: rgba(60, 0, 150, 0.8); /* Color of the thumb (purple) */
+    border-radius: 4px; /* Rounded corners of the thumb */
+  }
+  
+  /* Customize the scrollbar thumb on hover */
+  .chat-section::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(80, 0, 180, 1); /* Lighter purple on hover */
+  }
+  
+  /* Customize the scrollbar track on hover */
+  .chat-section::-webkit-scrollbar-track {
+    background-color: rgba(100, 100, 100, 0.5); /* Color of the track (gray) */
+  }
+  
