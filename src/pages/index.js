@@ -27,8 +27,11 @@ export default function Home() {
     event.preventDefault();
 
     setChatLog((prevChatLog) => [...prevChatLog, { type: 'user', message: inputValue }]);
+const prompt =
+    "Please rephrase the following text in 8 year old kid understandable language and within 140 words ,not more than 140 words, it could be 80 words or 50 words but not more than 140 words: \n" +
+    inputValue;
+    sendMessage(prompt);
 
-    sendMessage(inputValue);
 
     setInputValue('');
   }
